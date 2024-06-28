@@ -1,1 +1,3 @@
-alert("Hello world")
+import homepage from './homepage.js'
+
+homepage();
