@@ -40,7 +40,7 @@ const menu = () => {
     heading2.textContent = "Caesar Salad";
     para2.textContent = "Fresh romaine lettuce with Caesar dressing, croutons, and Parmesan cheese."
     
-    menuSection2.appendChild(menuItem2);
+    menuSection2.appendChild(menuItem);
     menuItem2.appendChild(heading2);
     menuItem2.appendChild(para2);
     menu.appendChild(menuSection2);
