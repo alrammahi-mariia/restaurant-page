@@ -1,5 +1,6 @@
 const homepage = () => {
     const content = document.querySelector('#content');
+    content.innerHTML = "";
 
     // Hero section 
     const heroSection = document.createElement('div');
