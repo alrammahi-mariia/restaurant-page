@@ -4,7 +4,6 @@ import img2 from "./img-2.jpeg";
 
 const homepage = () => {
     const content = document.querySelector('#content');
-    content.innerHTML = "";
 
     // Hero section 
     const heroSection = document.createElement('div');

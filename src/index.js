@@ -1,14 +1,32 @@
 import homepage from './homepage.js';
 import menu from './menu.js';
 import reservations from './reservations.js';
+import pageLoad from './Pageload.js';
 import './styles.css';
 
-homepage();
+pageLoad();
+
 
 const menuButton = document.querySelector('#menu');
 const homeButton = document.querySelector('#home');
 const reservationsButton = document.querySelector('#reservations');
 
-menuButton.addEventListener('click', menu);
-homeButton.addEventListener('click', homepage);
-reservationsButton.addEventListener('click', reservations);
+function clearContent(){
+    const content = document.querySelector('#content');
+    content.innerHTML = "";
+}
+
+menuButton.addEventListener('click', () => {
+    clearContent(),
+    menu()
+});
+
+homeButton.addEventListener('click',  () => {
+    clearContent(),
+    homepage()
+});
+
+reservationsButton.addEventListener('click',  () => {
+    clearContent(),
+    reservations()
+});

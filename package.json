@@ -4,8 +4,7 @@
   "description": "Restaurant page",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "scripts": "gh-deploy: git subtree push --prefix dist origin gh-pages"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Mariia",
   "license": "ISC",

@@ -1,7 +1,6 @@
 const menu = () => {
     
-    const menu = document.querySelector('#content');
-    menu.innerHTML = "";
+    const content = document.querySelector('#content');
 
     // Hero Section
 
@@ -12,7 +11,7 @@ const menu = () => {
     heroHead.textContent = "Our Menu";
     
     heroSection.appendChild(heroHead);
-    menu.appendChild(heroSection);
+    content.appendChild(heroSection);
 
     // Menu Item 1
 
@@ -27,7 +26,7 @@ const menu = () => {
     menuSection.appendChild(menuItem);
     menuItem.appendChild(heading1);
     menuItem.appendChild(para1);
-    menu.appendChild(menuSection);
+    content.appendChild(menuSection);
    
    
     // Menu Item 2
@@ -40,10 +39,10 @@ const menu = () => {
     heading2.textContent = "Caesar Salad";
     para2.textContent = "Fresh romaine lettuce with Caesar dressing, croutons, and Parmesan cheese."
     
-    menuSection2.appendChild(menuItem);
+    menuSection2.appendChild(menuItem2);
     menuItem2.appendChild(heading2);
     menuItem2.appendChild(para2);
-    menu.appendChild(menuSection2);
+    content.appendChild(menuSection2);
     
     
     // // Menu Item 1
