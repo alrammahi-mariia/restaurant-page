@@ -1,4 +1,6 @@
 import heroImage from "./hero-img.jpeg";
+import img1 from "./img-1.jpeg";
+import img2 from "./img-2.jpeg";
 
 const homepage = () => {
     const content = document.querySelector('#content');
@@ -27,8 +29,8 @@ const homepage = () => {
     firstSection.appendChild(text1);
     const heading1 = document.createElement('h2');
     const para1 = document.createElement('p');
-    const image1 = document.createElement('img');
-    image1.setAttribute('src', 'img-1.jpeg');
+    const image1 = new Image;
+    image1.src = img1;
 
     heading1.textContent = "Enjoyable place for all the family";
     para1.textContent = "Our relaxed surroundings make dining with us a grea experience for everyone. We can even arrange a tou of the tarm betore your meal"
@@ -49,8 +51,8 @@ const homepage = () => {
     secondSection.appendChild(text2);
     const heading2 = document.createElement('h2');
     const para2 = document.createElement('p');
-    const image2 = document.createElement('img');
-    image1.setAttribute('src', 'img-2.jpeg');
+    const image2 = new Image;
+    image2.src = img2;
 
     heading2.textContent = "The most locally sourced food";
     para2.textContent = "All our incredients come directly from our farm or local fishery. So you can be sure that you're eating the freshest, most sustainable food."
