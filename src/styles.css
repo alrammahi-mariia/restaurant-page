@@ -1,0 +1,133 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1em;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+header nav button:hover {
+    color: #aaa;
+}
+
+#content {
+    
+   
+    /* padding: 20px; */
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin: 0 0 10px;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.hero-section img {
+    max-width: 45%;
+    border-radius: 5px;
+}
+
+section {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin: 0 0 10px;
+}
+
+section p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+section img {
+    max-width: 45%;
+    max-height: 600px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer #logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+footer #contact p, footer #office-hours p {
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .hero-section, section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-section img, section img {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .hero-section div, section div {
+        max-width: 100%;
+    }
+}

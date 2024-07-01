@@ -1,3 +1,5 @@
+import heroImage from "./hero-img.jpeg";
+
 const homepage = () => {
     const content = document.querySelector('#content');
     content.innerHTML = "";
@@ -8,8 +10,8 @@ const homepage = () => {
     const textBox = document.createElement('div');
     const heroHead = document.createElement('h1');
     const heroPara = document.createElement('p');
-    const image = document.createElement('img');
-    image.setAttribute('href', 'hero-img.jpeg');
+    const image = new Image();
+    image.src = heroImage;
     heroHead.textContent = "Exquisite dining since 1989";
     heroPara.textContent = "Experience our seasonal menu in beautitul country surroundings. Eat the freshest produce from the comfort of our farmhouse."
    
@@ -26,7 +28,7 @@ const homepage = () => {
     const heading1 = document.createElement('h2');
     const para1 = document.createElement('p');
     const image1 = document.createElement('img');
-    image1.setAttribute('href', 'img-1.jpg');
+    image1.setAttribute('src', 'img-1.jpeg');
 
     heading1.textContent = "Enjoyable place for all the family";
     para1.textContent = "Our relaxed surroundings make dining with us a grea experience for everyone. We can even arrange a tou of the tarm betore your meal"
@@ -48,7 +50,7 @@ const homepage = () => {
     const heading2 = document.createElement('h2');
     const para2 = document.createElement('p');
     const image2 = document.createElement('img');
-    image1.setAttribute('href', 'img-2.jpg');
+    image1.setAttribute('src', 'img-2.jpeg');
 
     heading2.textContent = "The most locally sourced food";
     para2.textContent = "All our incredients come directly from our farm or local fishery. So you can be sure that you're eating the freshest, most sustainable food."

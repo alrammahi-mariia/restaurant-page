@@ -1,6 +1,7 @@
 import homepage from './homepage.js';
 import menu from './menu.js';
 import reservations from './reservations.js';
+import './styles.css';
 
 homepage();
 
